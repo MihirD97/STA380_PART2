@@ -1,9 +1,13 @@
 library(ggplot2)
+
+library(devtools)
+
+#install_github("cran/LICORS")
 library(LICORS)  # for kmeans++
 library(foreach)
 library(mosaic)
 
-cars = read.csv('../data/cars.csv', header=TRUE)
+cars = read.csv('data/cars.csv', header=TRUE)
 
 summary(cars)
 
